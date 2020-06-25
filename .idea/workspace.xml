@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9ff33826-0adb-4ec8-9b8f-51a06e788c5f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/model/Carrinho.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/Cliente.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/Livro.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/Pedido.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/Tv.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/Violao.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/padrao/AbstractProduto.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/padrao/__init__.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1douedPnUjs6Tb79lIFvpRMAR3W" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9ff33826-0adb-4ec8-9b8f-51a06e788c5f" name="Default Changelist" comment="" />
+      <created>1593103866185</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1593103866185</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="402" y="174" width="548" height="398" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593107369032">
+      <screen x="0" y="0" width="1360" height="744" />
+    </state>
+    <state x="402" y="174" width="548" height="398" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1360.744@0.0.1360.744" timestamp="1593107369032" />
+    <state width="600" height="428" key="javadoc.popup" timestamp="1593106902804">
+      <screen x="0" y="0" width="1360" height="744" />
+    </state>
+    <state width="600" height="428" key="javadoc.popup/0.0.1360.744@0.0.1360.744" timestamp="1593106902804" />
+    <state x="343" y="65" width="672" height="678" key="search.everywhere.popup" timestamp="1593104800368">
+      <screen x="0" y="0" width="1360" height="744" />
+    </state>
+    <state x="343" y="65" width="672" height="678" key="search.everywhere.popup/0.0.1360.744@0.0.1360.744" timestamp="1593104800368" />
+  </component>
+</project>
