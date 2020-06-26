@@ -29,7 +29,7 @@ class Pedido(object):
         def Cliente(self, value):
             self._Cliente = value
 
-        @ @property
+        @property
         def Carrinho(self):
             return self._Carrinho
 

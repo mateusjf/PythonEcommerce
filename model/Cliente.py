@@ -13,7 +13,7 @@ class Cliente(object):
     def nome(self, value):
         self._nome = value
 
-    @ @property
+    @property
     def cpf(self):
         return self._cpf
 

@@ -14,7 +14,7 @@ class Tv(AbstractProduto):
     def marca(self, value):
         self._marca = value
 
-    @@property
+    @property
     def pelagada(self):
         return self._polegada
 

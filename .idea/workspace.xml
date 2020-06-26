@@ -20,15 +20,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ff33826-0adb-4ec8-9b8f-51a06e788c5f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/model/Carrinho.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/Cliente.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/Livro.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/Pedido.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/Tv.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/Violao.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/padrao/AbstractProduto.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/padrao/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/Controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/Dao.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/padrao/ContextFrete.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/padrao/FactoryProduto.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/padrao/Singleton.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/padrao/StrategyFrete.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/padrao/StrategyLivro.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/padrao/StrategyTv.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/padrao/StrategyViolao.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/padrao/TipoLivro.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/padrao/TipoTv.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/padrao/TipoViolao.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Carrinho.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/Carrinho.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Cliente.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/Cliente.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Pedido.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/Pedido.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Tv.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/Tv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Violao.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/Violao.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/padrao/AbstractProduto.py" beforeDir="false" afterPath="$PROJECT_DIR$/padrao/AbstractProduto.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +68,11 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/view" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />

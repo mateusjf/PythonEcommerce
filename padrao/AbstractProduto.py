@@ -4,6 +4,10 @@ class AbstractProduto(object):
         self._descricao = ""
         self._id = -1
 
+    @abstractmethod
+    def exibir_informacao(self):
+        raise NotImplementedError()
+
     @property
     def valor(self):
         return self._valor
@@ -12,7 +16,7 @@ class AbstractProduto(object):
     def valor(self, value):
         self._valor = value
 
-    @@property
+    @property
     def descricao(self):
         return self._descricao
 
@@ -20,6 +24,6 @@ class AbstractProduto(object):
     def descricao(self, value):
         self._descricao = value
 
-    @@property
+    @property
     def id(self):
         return self._id

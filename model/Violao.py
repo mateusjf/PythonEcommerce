@@ -8,7 +8,7 @@ class Violao(AbstractProduto):
         self._cor
         self._entrada_eletrica = False
 
-    @ @property
+    @property
     def marca(self):
         return self._marca
 
@@ -24,7 +24,7 @@ class Violao(AbstractProduto):
     def modelo(self, value):
         self._modelo = value
 
-    @@property
+    @property
     def cor(self):
         return self._cor
 

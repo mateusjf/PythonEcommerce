@@ -9,7 +9,7 @@ class Carrinho(object):
 
     @id_carrinho.setter
     def id_carrinho(self, value):
-        pass self._id_carrinho
+        self._id_carrinho
         """
     @property
     def Pedido(self):
