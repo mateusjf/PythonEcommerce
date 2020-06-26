@@ -14,11 +14,11 @@ class Cliente(object):
         self._nome = value
 
     @property
-    def cpf(self):
+    def id(self):
         return self._cpf
 
-    @cpf.setter
-    def cpf(self, value):
+    @id.setter
+    def id(self, value):
         self._cpf = value
 """
     @property

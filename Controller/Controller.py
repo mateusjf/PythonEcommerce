@@ -1,7 +1,7 @@
 class Controller:
     def __init__(self, modelo, visao):
-        self._visao = modelo
-        self._modelo = visao
+        self.visao = visao
+        self.modelo = modelo
 """
     @property
     def visao(self):

@@ -4,11 +4,11 @@ class Carrinho(object):
        # self._Pedido = None
 
     @property
-    def id_carrinho(self):
+    def id(self):
         return self._id_carrinho
 
     @id_carrinho.setter
-    def id_carrinho(self, value):
+    def id(self, value):
         self._id_carrinho
         """
     @property

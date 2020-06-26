@@ -1,4 +1,4 @@
-from padrao import AbstractProduto
+from padrao.AbstractProduto import AbstractProduto
 
 class Tv(AbstractProduto):
     def __init__(self):
