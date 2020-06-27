@@ -1,23 +1,23 @@
-from utilitarios.funcoes import *
+from utilitarios.funcoes import clearConsole
 from dao.Dao import Dao
-from Controller.Controller import *
-from view.view import *
+from Controller.Controller import Controller
+from view.view import View
 
-from padrao.Singleton import *
-from padrao.FactoryProduto import *
-from padrao.TipoLivro import *
-from padrao.TipoTv import *
-from padrao.TipoViolao import *
-from padrao.Sistema import *
-from padrao.Command import *
-from padrao.BoletoCommand import *
-from padrao.CartaoCommand import *
-from padrao.Acao import *
-from padrao.ContextFrete import *
-from padrao.StrategyLivro import *
-from padrao.StrategyTv import *
-from padrao.StrategyViolao import *
-from padrao.Texto import *
+from padrao.Singleton import SingletonCarrinho
+from padrao.FactoryProduto import FactoryProduto
+from padrao.TipoLivro import TipoLivro
+from padrao.TipoTv import TipoTc
+from padrao.TipoViolao import TipoViolao
+from padrao.Sistema import Sistema
+from padrao.Command import Command
+from padrao.BoletoCommand import BoletoCommand
+from padrao.CartaoCommand import CartaoCommand
+from padrao.Acao import Acao
+from padrao.ContextFrete import ContextFrete
+from padrao.StrategyLivro import StrategyLivro
+from padrao.StrategyTv import StrategyTv
+from padrao.StrategyViolao import StrategyViolao
+from padrao.Texto import Texto
 
 from model.Cliente import *
 from model.Livro import *
@@ -83,7 +83,7 @@ class Ecommerce:
 
     def cadastrar_cliente(self):
         clearConsole()
-        print('Cadastro Cliente--\n')
+        print('--Cadastro Cliente--\n')
         try:
             cliente = Cliente()
             cliente.nome = input('Digite seu nome: ')
@@ -91,7 +91,7 @@ class Ecommerce:
             cliente._data_nascimento = input('Digite sua data de nascimento: ')
             cliente_controller = Controller(cliente, View())
             clienteDAO.adicionar(cliente_controller)
-            input('Cliete cadastrado...')
+            input('Cliete cadastrado...[ENTER]')
         except Exception as e:
             raise e
 
@@ -100,7 +100,7 @@ class Ecommerce:
         cpf = input('Digite o seu cpf: ')
         cliente_controler = clienteDAO.buscar(cpf)
         if cliente_controler == None:
-            input('CPF invalido...')
+            input('CPF invalido...[ENTER]')
             return
 
         input('Login aceito...')
@@ -109,10 +109,10 @@ class Ecommerce:
             clearConsole()
             print('Bem Vindo: ' + cliente_controler.modelo.nome)
             print('')
-            print('1 - Comprar')
+            print('1 - Comprar (Command)')
             print('2 - Listar Pedidos')
-            print('3 - Enviar feedback')
-            print('4 - Verificar Frete Sobre Produto')
+            print('3 - Enviar feedback (Memento)')
+            print('4 - Verificar Frete Sobre Produto (Strategy)')
             print('5 - Voltar')
             print('')
             try:
@@ -165,7 +165,7 @@ class Ecommerce:
 
                 while True:
                     clearConsole()
-                    print('Modo de pagamento: ')
+                    print('Modo de pagamento (Command): ')
                     print('1 - Boleto')
                     print('2 - Cartao')
 
@@ -181,13 +181,15 @@ class Ecommerce:
                         continue
                 sistemaPagamento = Sistema()
                 sistemaPagamento.processar_pedido(comando)
-                input('Compra Finalizada...')
+                input('\nCompra Finalizada...[ENTER]')
 
                 return
 
     def listar_pedidos(self):
         for pedido in pedidoDAO.get_lista():
             print(pedido.modelo)
+
+        input('Concluido...[ENTER]')
 
     def enviar_feedback(self):
         memento = Texto()
@@ -255,7 +257,7 @@ class Ecommerce:
                 print('Frete: ' + str(contexto.calcularFrete(item)))
                 print('')
 
-        input('Continuar...')
+        input('Continuar...[ENTER]')
 
 
 if __name__ == '__main__':
