@@ -17,6 +17,7 @@ from padrao.ContextFrete import *
 from padrao.StrategyLivro import *
 from padrao.StrategyTv import *
 from padrao.StrategyViolao import *
+from padrao.Texto import *
 
 from model.Cliente import *
 from model.Livro import *
@@ -111,7 +112,7 @@ class Ecommerce:
             print('')
             print('1 - Comprar')
             print('2 - Listar Pedidos')
-            print('3 - Historico de Compras')
+            print('3 - Enviar feedback')
             print('4 - Verificar Frete Sobre Produto')
             print('5 - Voltar')
             print('')
@@ -122,7 +123,7 @@ class Ecommerce:
                 elif opcao == 2:
                     self.listar_pedidos()
                 elif opcao == 3:
-                    self.historico_compras()
+                    self.enviar_feedback()
                 elif opcao == 4:
                     self.frete_produto(cliente_controler.modelo)
                 elif opcao == 5:
@@ -189,8 +190,28 @@ class Ecommerce:
         for pedido in pedidoDAO.get_lista():
             print(pedido.modelo)
 
-    def historico_compras(self):
-        pass
+    def enviar_feedback(self):
+        memento = Texto()
+        while True:
+            clearConsole()
+            print('Feedback escrito: \n')
+            memento.mostrar_texto()
+
+            print('\n1 - Adicionar texto')
+            print('2 - Desfazer ultima escrita')
+            print('3 - Sair')
+            print('')
+            opcao = input('Digite sua opcao: ')
+
+            if opcao == '1':
+                novo_texto = input('Digite seu texto: ')
+                memento.escrever_texto(novo_texto)
+            elif opcao == '2':
+                memento.desfazer_escrita()
+            elif opcao == '3':
+                break
+            else:
+                continue;
 
     def frete_produto(self, cliente):
         historico = []
@@ -202,31 +223,40 @@ class Ecommerce:
             print(str(i) +  ' - ' + historico[i].modelo.__str__())
 
         id = int(input('Deseja ver o frete dos produtos de quais pedidos: '))
-        meus_produtos = historico[id].modelo.Carrinho.produtos
-        meus_produtos = [meus_produtos[0].modelo, meus_produtos[1].modelo, meus_produtos[2].modelo]
+        meu_historico = historico[id].modelo.Carrinho.produtos
+        meus_produtos = []
 
+        for p in meu_historico:
+            meus_produtos.append(p.modelo)
+
+        clearConsole()
         for item in meus_produtos:
             if type(item) == Violao:
                 contexto = ContextFrete(StrategyViolao())
 
                 print('Marca: ' + item.marca)
                 print('Modelo: ' + item.modelo)
-                #print('Valor Compra: ' + item._valor)
+                print('Valor Compra: ' + str(item._valor))
                 print('Frete: ' + str(contexto.calcularFrete(item)))
+                print('')
             elif type(item) == Livro:
                 contexto = ContextFrete(StrategyLivro())
 
-                print('Marca: ' + item.titulo)
-                print('Modelo: ' + item.autor)
-                # print('Valor Compra: ' + item._valor)
+                print('Titulo: ' + item.titulo)
+                print('Autor: ' + item.autor)
+                print('Valor Compra: ' + str(item._valor))
                 print('Frete: ' + str(contexto.calcularFrete(item)))
+                print('')
             elif type(item) == Tv:
                 contexto = ContextFrete(StrategyViolao())
 
                 print('Marca: ' + item.marca)
                 print('Modelo: ' + item.modelo)
-                # print('Valor Compra: ' + item._valor)
+                print('Valor Compra: ' + str(item._valor))
                 print('Frete: ' + str(contexto.calcularFrete(item)))
+                print('')
+
+        input('Continuar...')
 
 
 if __name__ == '__main__':

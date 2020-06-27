@@ -3,4 +3,4 @@ class ContextFrete():
         self._estrategia = estrategia
 
     def calcularFrete(self, objeto):
-        return estrategia.calcularFrete(objeto)
+        return self._estrategia.calcularFrete(objeto)
