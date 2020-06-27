@@ -1,4 +1,4 @@
-class Dao(object):
+class Dao:
     def __init__(self):
         self._lista = []
 

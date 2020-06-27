@@ -1,4 +1,4 @@
-class Pedido(object):
+class Pedido:
 
     def __init__(self):
         self._id_pedido = -1

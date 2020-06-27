@@ -26,7 +26,6 @@ from model.Violao import *
 from model.Pedido import *
 from model.Carrinho import *
 
-# from padrao.AbstractProduto import *
 
 clienteDAO = Dao()
 produtoDAO = Dao()

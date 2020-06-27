@@ -1,4 +1,4 @@
-class Cliente(object):
+class Cliente:
     def __init__(self):
         self._nome = ""
         self._cpf = ""
@@ -20,12 +20,3 @@ class Cliente(object):
     @id.setter
     def id(self, value):
         self._cpf = value
-"""
-    @property
-    def Pedido(self):
-        return self._pedido
-
-    @Pedido.setter
-    def Pedido(self, value):
-        return self._pedido
-"""

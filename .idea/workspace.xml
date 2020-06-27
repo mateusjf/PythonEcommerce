@@ -20,16 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ff33826-0adb-4ec8-9b8f-51a06e788c5f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/padrao/Texto.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/padrao/TextoCareTaker.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/padrao/TextoMemento.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/Controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/Dao.py" beforeDir="false" afterPath="$PROJECT_DIR$/dao/Dao.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ideia" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Carrinho.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/Carrinho.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Cliente.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/Cliente.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Pedido.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/Pedido.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/padrao/ContextFrete.py" beforeDir="false" afterPath="$PROJECT_DIR$/padrao/ContextFrete.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/padrao/StrategyFrete.py" beforeDir="false" afterPath="$PROJECT_DIR$/padrao/StrategyFrete.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/padrao/StrategyLivro.py" beforeDir="false" afterPath="$PROJECT_DIR$/padrao/StrategyLivro.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/padrao/StrategyTv.py" beforeDir="false" afterPath="$PROJECT_DIR$/padrao/StrategyTv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/padrao/StrategyViolao.py" beforeDir="false" afterPath="$PROJECT_DIR$/padrao/StrategyViolao.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,22 +122,22 @@
       <screen x="0" y="0" width="1360" height="744" />
     </state>
     <state x="342" y="0" width="668" height="744" key="#main/0.0.1360.744@0.0.1360.744" timestamp="1593195057444" />
-    <state width="1315" height="243" key="GridCell.Tab.0.bottom" timestamp="1593258577256">
+    <state width="1315" height="243" key="GridCell.Tab.0.bottom" timestamp="1593259115769">
       <screen x="0" y="0" width="1360" height="744" />
     </state>
-    <state width="1315" height="243" key="GridCell.Tab.0.bottom/0.0.1360.744@0.0.1360.744" timestamp="1593258577256" />
-    <state width="1315" height="243" key="GridCell.Tab.0.center" timestamp="1593258577252">
+    <state width="1315" height="243" key="GridCell.Tab.0.bottom/0.0.1360.744@0.0.1360.744" timestamp="1593259115769" />
+    <state width="1315" height="243" key="GridCell.Tab.0.center" timestamp="1593259115768">
       <screen x="0" y="0" width="1360" height="744" />
     </state>
-    <state width="1315" height="243" key="GridCell.Tab.0.center/0.0.1360.744@0.0.1360.744" timestamp="1593258577252" />
-    <state width="1315" height="243" key="GridCell.Tab.0.left" timestamp="1593258577251">
+    <state width="1315" height="243" key="GridCell.Tab.0.center/0.0.1360.744@0.0.1360.744" timestamp="1593259115768" />
+    <state width="1315" height="243" key="GridCell.Tab.0.left" timestamp="1593259115768">
       <screen x="0" y="0" width="1360" height="744" />
     </state>
-    <state width="1315" height="243" key="GridCell.Tab.0.left/0.0.1360.744@0.0.1360.744" timestamp="1593258577251" />
-    <state width="1315" height="243" key="GridCell.Tab.0.right" timestamp="1593258577253">
+    <state width="1315" height="243" key="GridCell.Tab.0.left/0.0.1360.744@0.0.1360.744" timestamp="1593259115768" />
+    <state width="1315" height="243" key="GridCell.Tab.0.right" timestamp="1593259115769">
       <screen x="0" y="0" width="1360" height="744" />
     </state>
-    <state width="1315" height="243" key="GridCell.Tab.0.right/0.0.1360.744@0.0.1360.744" timestamp="1593258577253" />
+    <state width="1315" height="243" key="GridCell.Tab.0.right/0.0.1360.744@0.0.1360.744" timestamp="1593259115769" />
     <state width="600" height="428" key="javadoc.popup" timestamp="1593106902804">
       <screen x="0" y="0" width="1360" height="744" />
     </state>
