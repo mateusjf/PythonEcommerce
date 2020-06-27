@@ -2,9 +2,22 @@ from padrao.AbstractProduto import AbstractProduto
 
 class Tv(AbstractProduto):
     def __init__(self):
-        self._marca
-        self._polegada
-        self._modelo
+        self._marca = "Philco"
+        self._polegada = "42.2"
+        self._modelo = "Plasma"
+        self._id = 2
+        self._valor = 1200.99
+        self._descricao = "Apenas uma tv"
+
+    def exibir_informacao(self):
+        string = 'Tv\n'
+        string += 'Id: ' + str(self.id) + '\n'
+        string += 'Valor: ' + str(self._valor) + '\n'
+        string += 'Descricao: ' + self._descricao + '\n'
+        string += 'Marca: ' + self._marca + '\n'
+        string += 'Polegada: ' + str(self._polegada) + '\n'
+        string += 'Modelo: ' + self._modelo + '\n'
+        return string
 
     @property
     def marca(self):
@@ -29,3 +42,11 @@ class Tv(AbstractProduto):
     @modelo.setter
     def modelo(self, value):
         self._modelo = value
+
+    @property
+    def id(self):
+        return self._id
+
+    @id.setter
+    def id(self, value):
+        self._id = value

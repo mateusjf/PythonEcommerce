@@ -22,3 +22,6 @@ class Dao(object):
                 return self._lista[i]
             else:
                 return None
+
+    def get_lista(self):
+        return self._lista

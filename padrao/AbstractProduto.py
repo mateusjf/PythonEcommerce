@@ -1,4 +1,6 @@
-class AbstractProduto(object):
+from abc import ABC, abstractmethod
+
+class AbstractProduto(ABC):
     def __init__(self):
         self._valor = 0.0
         self._descricao = ""
@@ -24,6 +26,3 @@ class AbstractProduto(object):
     def descricao(self, value):
         self._descricao = value
 
-    @property
-    def id(self):
-        return self._id

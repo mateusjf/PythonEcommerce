@@ -6,11 +6,11 @@ class Pedido(object):
         self._Carrinho = None
 
         @property
-        def id_pedido(self):
+        def id(self):
             return self._data_pedido
 
-        @id_pedido.setter
-        def id_pedido(self, value):
+        @id.setter
+        def id(self, value):
             self._id_pedido = value
 
         @property
@@ -36,3 +36,9 @@ class Pedido(object):
         @Carrinho.setter
         def Carrinho(self, value):
             self._Carrinho = value
+
+       def __str__(self):
+           string = ""
+           string += 'Id Pedido: ' + str(self.id) + '\n'
+           string += 'Data Pedido: ' + str(self.id) + '\n'
+

@@ -7,4 +7,4 @@ class BoletoCommand(Command):
         self.objeto = objeto
 
     def execute(self):
-        pass
+        self.objeto.pagar_boleto()

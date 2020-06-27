@@ -1,5 +1,5 @@
-from padrao import FactoryProduto
-from model import Livro
+from padrao.FactoryProduto import FactoryProduto
+from model.Livro import Livro
 
 class TipoLivro(FactoryProduto):
 

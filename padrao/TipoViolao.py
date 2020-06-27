@@ -1,8 +1,8 @@
-from padrao import FactoryProduto
-from model import Violao
+from padrao.FactoryProduto import FactoryProduto
+from model.Violao import Violao
 
 
-class TipoLivro(FactoryProduto):
+class TipoViolao(FactoryProduto):
 
     def criar_produto(self):
         return Violao()

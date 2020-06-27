@@ -1,5 +1,5 @@
-from padrao import FactoryProduto
-from model import Tv
+from padrao.FactoryProduto import FactoryProduto
+from model.Tv import Tv
 
 
 class TipoTc(FactoryProduto):

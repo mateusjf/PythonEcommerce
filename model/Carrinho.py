@@ -1,15 +1,15 @@
 class Carrinho(object):
     def __init__(self):
         self._id_carrinho = -1
-       # self._Pedido = None
+        self.produtos = []
 
     @property
     def id(self):
         return self._id_carrinho
 
-    @id_carrinho.setter
+    @id.setter
     def id(self, value):
-        self._id_carrinho
+        self._id_carrinho = value
         """
     @property
     def Pedido(self):
