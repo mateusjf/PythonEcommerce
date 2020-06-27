@@ -1,4 +1,4 @@
-from padrao import Command
+from padrao.CartaoCommand import Command
 
 
 class BoletoCommand(Command):

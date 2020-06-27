@@ -1,8 +1,8 @@
+from abc import ABC, abstractmethod
 
+class StrategyFrete(ABC):
 
-class StrategyFrete:
-
-    @abstraticmethod
+    @abstractmethod
     def calculaFrete(self, Produto):
         raise NotImplementedError()
 

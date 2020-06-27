@@ -1,4 +1,4 @@
-from padrao import Command
+from padrao.Command import Command
 
 class CartaoCommand(Command):
 

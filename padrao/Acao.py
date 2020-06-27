@@ -1,4 +1,4 @@
-class AcaoCommand():
+class Acao:
 
     def pagar_boleto(self):
         print('Escolha de Pagamento realizado com boleto')

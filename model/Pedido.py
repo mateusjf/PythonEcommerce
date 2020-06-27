@@ -1,4 +1,5 @@
 class Pedido(object):
+
     def __init__(self):
         self._id_pedido = -1
         self._data_pedido = None
@@ -37,8 +38,8 @@ class Pedido(object):
         def Carrinho(self, value):
             self._Carrinho = value
 
-       def __str__(self):
-           string = ""
-           string += 'Id Pedido: ' + str(self.id) + '\n'
-           string += 'Data Pedido: ' + str(self.id) + '\n'
-
+    def __str__(self):
+        string = ""
+        string += 'Id Pedido: ' + str(self.id) + '\n'
+        string += 'Data Pedido: ' + str(self._data_pedido) + '\n'
+        return string

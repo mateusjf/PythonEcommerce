@@ -1,7 +1,7 @@
-from padrao import StrategyFrete
+from padrao.StrategyFrete import StrategyFrete
 
 class StrategyLivro(StrategyFrete):
 
     def calculaFrete(self, Produto):
         porcentagem = Produto.valor * 0.10
-        return porcentagem + Produto.valor
+        return porcentagem + Produto._valor
